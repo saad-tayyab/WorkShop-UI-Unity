@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d3db474fad76428c98c34985e07e4b9, type: 3}
+  m_Name: New ItemData
+  m_EditorClassIdentifier: 
+  cardsImage: {fileID: 21300000, guid: 60d8a6b3661114e3fbafc234cd503f80, type: 3}
+  expireTime: 1D 1H 6M
+  miniItem1: {fileID: 21300000, guid: d1cbd410b06dd48419debb90d8b17976, type: 3}
+  miniItemCount1: 2/20
+  miniItem2: {fileID: 21300000, guid: d15f2e5a08d2044d5894cbb9afc4f9ba, type: 3}
+  miniItemCount2: 2/20
+  miniItem3: {fileID: 21300000, guid: 293ae448def504482a1fb01265e8c3f6, type: 3}
+  miniItemCount3: 2/20
+  miniItem4: {fileID: 21300000, guid: 2325f60f33f3e4b7382f9cf819daa1fe, type: 3}
+  miniItemCount4: 2/20
