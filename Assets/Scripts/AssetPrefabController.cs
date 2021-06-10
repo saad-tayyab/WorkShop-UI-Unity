@@ -3,56 +3,44 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class AssetPrefabController : MonoBehaviour
-{
+public class AssetPrefabController : MonoBehaviour {
     [SerializeField]
     private Image cardsImage;
-    public Image CardsImage
-    {
-        get
-        {
+    public Image CardsImage {
+        get {
             return cardsImage;
         }
-        set
-        {
+        set {
             cardsImage = value;
         }
     }
 
     [SerializeField]
     private Text expireTime;
-    public Text ExpireTime
-    {
-        get
-        {
+    public Text ExpireTime {
+        get {
             return expireTime;
         }
     }
 
     [SerializeField]
     private Image miniItem1;
-    public Image MiniItem1
-    {
-        get
-        {
+    public Image MiniItem1 {
+        get {
             return miniItem1;
         }
     }
     [SerializeField]
     private Text miniItemCount1;
-    public Text MiniItemCount1
-    {
-        get
-        {
+    public Text MiniItemCount1 {
+        get {
             return miniItemCount1;
         }
     }
     [SerializeField]
     private Button miniItemButton1;
-    public Button MiniItemButton1
-    {
-        get
-        {
+    public Button MiniItemButton1 {
+        get {
             return miniItemButton1;
         }
     }
@@ -60,158 +48,144 @@ public class AssetPrefabController : MonoBehaviour
 
     [SerializeField]
     private Image miniItem2;
-    public Image MiniItem2
-    {
-        get
-        {
+    public Image MiniItem2 {
+        get {
             return miniItem2;
         }
     }
     [SerializeField]
     private Text miniItemCount2;
-    public Text MiniItemCount2
-    {
-        get
-        {
+    public Text MiniItemCount2 {
+        get {
             return miniItemCount2;
         }
     }
     [SerializeField]
     private Button miniItemButton2;
-    public Button MiniItemButton2
-    {
-        get
-        {
+    public Button MiniItemButton2 {
+        get {
             return miniItemButton2;
         }
     }
-    
+
 
     [SerializeField]
     private Image miniItem3;
-    public Image MiniItem3
-    {
-        get
-        {
+    public Image MiniItem3 {
+        get {
             return miniItem3;
         }
     }
     [SerializeField]
     private Text miniItemCount3;
-    public Text MiniItemCount3
-    {
-        get
-        {
+    public Text MiniItemCount3 {
+        get {
             return miniItemCount3;
         }
     }
     [SerializeField]
     private Button miniItemButton3;
-    public Button MiniItemButton3
-    {
-        get
-        {
+    public Button MiniItemButton3 {
+        get {
             return miniItemButton3;
         }
     }
-    
+
 
     [SerializeField]
     private Image miniItem4;
-    public Image MiniItem4
-    {
-        get
-        {
+    public Image MiniItem4 {
+        get {
             return miniItem4;
         }
     }
     [SerializeField]
     private Text miniItemCount4;
-    public Text MiniItemCount4
-    {
-        get
-        {
+    public Text MiniItemCount4 {
+        get {
             return miniItemCount4;
         }
     }
     [SerializeField]
     private Button miniItemButton4;
-    public Button MiniItemButton4
-    {
-        get
-        {
+    public Button MiniItemButton4 {
+        get {
             return miniItemButton4;
         }
     }
 
     [SerializeField]
     private Image miniItemContainer1;
-    public Image MiniItemContainer1
-    {
-        get
-        {
+    public Image MiniItemContainer1 {
+        get {
             return miniItemContainer1;
         }
     }
     [SerializeField]
     private Image miniItemContainer2;
-    public Image MiniItemContainer2
-    {
-        get
-        {
+    public Image MiniItemContainer2 {
+        get {
             return miniItemContainer2;
         }
     }
     [SerializeField]
     private Image miniItemContainer3;
-    public Image MiniItemContainer3
-    {
-        get
-        {
+    public Image MiniItemContainer3 {
+        get {
             return miniItemContainer3;
         }
     }
     [SerializeField]
     private Image miniItemContainer4;
-    public Image MiniItemContainer4
-    {
-        get
-        {
+    public Image MiniItemContainer4 {
+        get {
             return miniItemContainer4;
         }
     }
 
+    public void AssignComponenets (SingleItem singleItem) {
 
-    public void AddMouseEventListner(Sprite VerifiedSprite, Sprite ContainerSprite)
-    {
+        CardsImage.sprite = singleItem.CardsImage;
+
+        MiniItem1.sprite = singleItem.MiniItem1;
+        MiniItem2.sprite = singleItem.MiniItem2;
+        MiniItem3.sprite = singleItem.MiniItem3;
+        MiniItem4.sprite = singleItem.MiniItem4;
+
+        MiniItemCount1.text = singleItem.MiniItemCount1;
+        MiniItemCount2.text = singleItem.MiniItemCount2;
+        MiniItemCount3.text = singleItem.MiniItemCount3;
+        MiniItemCount4.text = singleItem.MiniItemCount4;
+
+        ExpireTime.text = singleItem.ExpireTime;
+    }
+
+    public void AddMouseEventListner (Sprite VerifiedSprite, Sprite ContainerSprite) {
+
         MiniItemButton1.onClick.AddListener(() => IncreaseMiniItemCount(MiniItemButton1, MiniItemCount1, VerifiedSprite, miniItemContainer1, ContainerSprite));
         MiniItemButton2.onClick.AddListener(() => IncreaseMiniItemCount(MiniItemButton2, MiniItemCount2, VerifiedSprite, miniItemContainer2, ContainerSprite));
         MiniItemButton3.onClick.AddListener(() => IncreaseMiniItemCount(MiniItemButton3, MiniItemCount3, VerifiedSprite, miniItemContainer3, ContainerSprite));
         MiniItemButton4.onClick.AddListener(() => IncreaseMiniItemCount(MiniItemButton4, MiniItemCount4, VerifiedSprite, miniItemContainer4, ContainerSprite));
     }
 
-    void IncreaseMiniItemCount(Button MiniItemButton, Text MiniItemCount, Sprite VerifiedSprite, Image containerImg, Sprite ContainerSprite)
-    {
+    void IncreaseMiniItemCount (Button MiniItemButton, Text MiniItemCount, Sprite VerifiedSprite, Image containerImg, Sprite ContainerSprite) {
         string str = MiniItemCount.text;
         Debug.Log(str);
-        if(str == "")
-        {
+        if (str == "") {
             return;
         }
 
         int number = int.Parse(str.Split('/')[0]);
         int total = int.Parse(str.Split('/')[1]);
 
-        if (number < total)
-        {
+        if (number < total) {
             number++;
         }
 
         string temp = number.ToString() + "/" + str.Split('/')[1];
         MiniItemCount.text = temp;
 
-        if (number == total)
-        {
+        if (number == total) {
             Image img = MiniItemButton.GetComponent<Image>();
             img.sprite = VerifiedSprite;
 
@@ -228,25 +202,18 @@ public class AssetPrefabController : MonoBehaviour
     Timer timeRemaining;
     bool startTimer = false;
 
-    public void StartTimer()
-    {
+    public void StartTimer () {
         string expireTimer = expireTime.text.ToString();
         timeRemaining = new Timer(expireTimer);
         timeRemaining.StartCountDown();
         startTimer = true;
     }
 
-    private void Start()
-    {
-        
-    }
 
-    void Update()
-    {
-        if (startTimer)
-        {
+    void Update () {
+        if (startTimer) {
             timeRemaining.UpdateCountDown();
             expireTime.text = timeRemaining.timeRemainingInStr;
-        }   
+        }
     }
 }

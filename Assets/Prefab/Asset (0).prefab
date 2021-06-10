@@ -130,6 +130,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 420593855300395327}
+  - component: {fileID: 5757103194137085193}
   m_Layer: 0
   m_Name: Item (0)
   m_TagString: Untagged
@@ -157,6 +158,23 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 114.12, y: 191.8}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &5757103194137085193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 420593855300395326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f669d1c51d74044e79e197951c0fe4b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  miniItemCount: {fileID: 3295702127903675181}
+  miniItemButton: {fileID: 4996561079194760342}
+  miniItemContainer: {fileID: 420593855431040441}
+  verifiedSprite: {fileID: 21300000, guid: 6589d7e9131264da3913d0136a6935d6, type: 3}
+  containerSprite: {fileID: 21300000, guid: 63691a7d00660453792ba791f2f79d01, type: 3}
 --- !u!1 &420593855431040447
 GameObject:
   m_ObjectHideFlags: 0
@@ -318,6 +336,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5011621645786854662}
+  - component: {fileID: 2386764622294209903}
   m_Layer: 0
   m_Name: Item (2)
   m_TagString: Untagged
@@ -345,6 +364,23 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 114.12, y: 191.8}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2386764622294209903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 449181884746438812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f669d1c51d74044e79e197951c0fe4b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  miniItemCount: {fileID: 6835251382676565837}
+  miniItemButton: {fileID: 2137921722110297261}
+  miniItemContainer: {fileID: 2230478903909214797}
+  verifiedSprite: {fileID: 21300000, guid: 6589d7e9131264da3913d0136a6935d6, type: 3}
+  containerSprite: {fileID: 21300000, guid: 63691a7d00660453792ba791f2f79d01, type: 3}
 --- !u!1 &752502519466798447
 GameObject:
   m_ObjectHideFlags: 0
@@ -1235,6 +1271,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3972864606994838909}
+  - component: {fileID: 5296042403030051}
   m_Layer: 0
   m_Name: Item (1)
   m_TagString: Untagged
@@ -1262,6 +1299,23 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 114.12, y: 191.8}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &5296042403030051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1886508492197129058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f669d1c51d74044e79e197951c0fe4b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  miniItemCount: {fileID: 6478839002298879500}
+  miniItemButton: {fileID: 3774116419008493174}
+  miniItemContainer: {fileID: 2673019558222278307}
+  verifiedSprite: {fileID: 21300000, guid: 6589d7e9131264da3913d0136a6935d6, type: 3}
+  containerSprite: {fileID: 21300000, guid: 63691a7d00660453792ba791f2f79d01, type: 3}
 --- !u!1 &4237956459025346287
 GameObject:
   m_ObjectHideFlags: 0
@@ -1583,6 +1637,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5324861042004553681}
+  - component: {fileID: 8970920499176381195}
   m_Layer: 0
   m_Name: Item (3)
   m_TagString: Untagged
@@ -1610,6 +1665,23 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 114.12, y: 191.8}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &8970920499176381195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6839483623381008826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f669d1c51d74044e79e197951c0fe4b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  miniItemCount: {fileID: 3872458043371405102}
+  miniItemButton: {fileID: 1253285538144899783}
+  miniItemContainer: {fileID: 7016759355604949596}
+  verifiedSprite: {fileID: 21300000, guid: 6589d7e9131264da3913d0136a6935d6, type: 3}
+  containerSprite: {fileID: 21300000, guid: 63691a7d00660453792ba791f2f79d01, type: 3}
 --- !u!1 &7569304750090251040
 GameObject:
   m_ObjectHideFlags: 0

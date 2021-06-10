@@ -1,11 +1,10 @@
 ﻿<Properties StartupConfiguration="{85520070-5296-5D5E-0D8A-F90459FA3BF6}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/UIManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ItemPrefabController.cs">
     <Files>
-      <File FileName="Assets/Scripts/Asset Item/AssetItem.cs" Line="13" Column="24" />
-      <File FileName="Assets/Scripts/Asset.cs" Line="47" Column="33" />
-      <File FileName="Assets/Scripts/AssetPrefabController.cs" Line="236" Column="27" />
-      <File FileName="Assets/Scripts/Timer.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/UIManager.cs" Line="48" Column="54" />
+      <File FileName="Assets/Scripts/Asset Item/AssetItem.cs" Line="5" Column="1" />
+      <File FileName="Assets/Scripts/Asset.cs" />
+      <File FileName="Assets/Scripts/AssetPrefabController.cs" />
+      <File FileName="Assets/Scripts/ItemPrefabController.cs" Line="51" Column="22" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,8 +12,9 @@
           <Node name="WorkShop-UI-Unity" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="Asset Item" expanded="True" />
-                <Node name="UIManager.cs" selected="True" />
+                <Node name="Asset Item" expanded="True">
+                  <Node name="AssetItem.cs" selected="True" />
+                </Node>
               </Node>
             </Node>
           </Node>
@@ -24,7 +24,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="400b9690-0f70-4d77-8399-8ecdd7dadebe" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="40274692-499a-4ffe-9e3b-7c15223b8f4a" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

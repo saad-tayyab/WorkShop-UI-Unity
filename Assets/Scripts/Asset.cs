@@ -4,20 +4,19 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-public class Asset : MonoBehaviour
-{
+public class Asset : MonoBehaviour {
     [SerializeField]
     private Item[] AssetData;
 
     [SerializeField]
     private AssetItem AssetsItem;
-   
+
 
     [SerializeField]
-    private Transform Panel;  // parent of Asset game objects
+    private Transform Panel;
 
     [SerializeField]
-    private GameObject AssetPrefab;     // template asset to be filled with Asset data and instantiated
+    private GameObject AssetPrefab;
 
     [SerializeField]
     private Sprite VerifiedSprite;
@@ -28,22 +27,13 @@ public class Asset : MonoBehaviour
     AssetPrefabController assetPrefabController;
 
     // Start is called before the first frame update
-    void Start()
-    {
+    void Start () {
         // IndividualAssetsStart();
         CollectectableAssetsStart();
     }
 
-    private void Update()
-    {
-        
-    }
-
-    void IndividualAssetsStart()
-    {
-        for (int i = 0; i < AssetData.Length; i++)
-        {
-            // code to be written for adding AssetData to AssetPrefab
+    void IndividualAssetsStart () {
+        for (int i = 0; i < AssetData.Length; i++) {
             assetPrefabController = Instantiate(AssetPrefab, Panel).GetComponent<AssetPrefabController>();
 
             assetPrefabController.CardsImage.sprite = AssetData[i].CardsImage;
@@ -67,30 +57,13 @@ public class Asset : MonoBehaviour
         }
     }
 
-    void CollectectableAssetsStart()
-    {
+    void CollectectableAssetsStart () {
         int length = AssetsItem.Contents.Capacity;
 
-        for(int i = 0; i < length; i++)
-        {
+        for (int i = 0; i < length; i++) {
             assetPrefabController = Instantiate(AssetPrefab, Panel).GetComponent<AssetPrefabController>();
-
-            assetPrefabController.CardsImage.sprite = AssetsItem.Contents[i].CardsImage;
-
-            assetPrefabController.MiniItem1.sprite = AssetsItem.Contents[i].MiniItem1;
-            assetPrefabController.MiniItem2.sprite = AssetsItem.Contents[i].MiniItem2;
-            assetPrefabController.MiniItem3.sprite = AssetsItem.Contents[i].MiniItem3;
-            assetPrefabController.MiniItem4.sprite = AssetsItem.Contents[i].MiniItem4;
-
-            assetPrefabController.AddMouseEventListner(VerifiedSprite, ContainerSprite);
-
-            assetPrefabController.MiniItemCount1.text = AssetsItem.Contents[i].MiniItemCount1;
-            assetPrefabController.MiniItemCount2.text = AssetsItem.Contents[i].MiniItemCount2;
-            assetPrefabController.MiniItemCount3.text = AssetsItem.Contents[i].MiniItemCount3;
-            assetPrefabController.MiniItemCount4.text = AssetsItem.Contents[i].MiniItemCount4;
-
-            assetPrefabController.ExpireTime.text = AssetsItem.Contents[i].ExpireTime;
-
+            assetPrefabController.AssignComponenets(AssetsItem.Contents[i]);
+            //assetPrefabController.AddMouseEventListner(VerifiedSprite, ContainerSprite);
             assetPrefabController.StartTimer();
         }
     }
