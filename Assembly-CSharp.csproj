@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{77B0B092-800F-5247-0CCF-440511DAF491}</ProjectGuid>
+    <ProjectGuid>{85520070-5296-5D5E-0D8A-F90459FA3BF6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -62,12 +62,12 @@
     <Compile Include="Assets/Scripts/AssetPrefabController.cs" />
     <Compile Include="Assets/DOTween/Modules/DOTweenModuleSprite.cs" />
     <Compile Include="Assets/Scripts/UIManager.cs" />
+    <Compile Include="Assets/Scripts/Timer.cs" />
     <Compile Include="Assets/Scripts/Item.cs" />
     <Compile Include="Assets/DOTween/Modules/DOTweenModuleUtils.cs" />
     <Compile Include="Assets/DOTween/Modules/DOTweenModuleAudio.cs" />
     <Compile Include="Assets/DOTween/Modules/DOTweenModuleUI.cs" />
     <Compile Include="Assets/Scripts/Asset.cs" />
-    <Compile Include="Assets/Scripts/Timer.cs" />
     <Compile Include="Assets/Scripts/Asset Item/AssetItem.cs" />
   </ItemGroup>
   <ItemGroup>

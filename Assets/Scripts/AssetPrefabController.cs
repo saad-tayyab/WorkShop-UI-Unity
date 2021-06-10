@@ -234,7 +234,6 @@ public class AssetPrefabController : MonoBehaviour
         timeRemaining = new Timer(expireTimer);
         timeRemaining.StartCountDown();
         startTimer = true;
-        Debug.Log(expireTimer);
     }
 
     private void Start()
