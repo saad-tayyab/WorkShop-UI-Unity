@@ -45,7 +45,7 @@ public class ItemPrefabController : MonoBehaviour
         }
     }
     private void Start () {
-        Debug.Log("Saad");
+        miniItemButton.onClick.AddListener(() => IncreaseMiniItemCount());
     }
 
     public void IncreaseMiniItemCount () {
